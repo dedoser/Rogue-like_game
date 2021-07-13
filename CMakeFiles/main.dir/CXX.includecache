@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fignigno/Desktop/cg/task1/main.cpp
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+iostream
+-
+
+dependencies/include/GLAD/KHR/khrplatform.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+dependencies/include/GLAD/glad/glad.h
+windows.h
+-
+stddef.h
+-
+KHR/khrplatform.h
+-
+inttypes.h
+-
+inttypes.h
+-
+inttypes.h
+-
+stdint.h
+-
+stdint.h
+-
+inttypes.h
+-
+

@@ -1,0 +1,3 @@
+/home/fignigno/Desktop/cg/task1/CMakeFiles/rebuild_cache.dir
+/home/fignigno/Desktop/cg/task1/CMakeFiles/edit_cache.dir
+/home/fignigno/Desktop/cg/task1/CMakeFiles/main.dir
