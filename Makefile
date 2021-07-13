@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fignigno/Desktop/cg/task1
+CMAKE_SOURCE_DIR = /home/fignigno/Desktop/cg/msu_cmc_cg_2021/template1_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fignigno/Desktop/cg/task1
+CMAKE_BINARY_DIR = /home/fignigno/Desktop/cg/msu_cmc_cg_2021/template1_cpp
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fignigno/Desktop/cg/task1/CMakeFiles /home/fignigno/Desktop/cg/task1/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fignigno/Desktop/cg/msu_cmc_cg_2021/template1_cpp/CMakeFiles /home/fignigno/Desktop/cg/msu_cmc_cg_2021/template1_cpp/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fignigno/Desktop/cg/task1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fignigno/Desktop/cg/msu_cmc_cg_2021/template1_cpp/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,141 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+Game.o: Game.cpp.o
+
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+Image.o: Image.cpp.o
+
+.PHONY : Image.o
+
+# target to build an object file
+Image.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Image.cpp.o
+.PHONY : Image.cpp.o
+
+Image.i: Image.cpp.i
+
+.PHONY : Image.i
+
+# target to preprocess a source file
+Image.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Image.cpp.i
+.PHONY : Image.cpp.i
+
+Image.s: Image.cpp.s
+
+.PHONY : Image.s
+
+# target to generate assembly for a file
+Image.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Image.cpp.s
+.PHONY : Image.cpp.s
+
+Interface.o: Interface.cpp.o
+
+.PHONY : Interface.o
+
+# target to build an object file
+Interface.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Interface.cpp.o
+.PHONY : Interface.cpp.o
+
+Interface.i: Interface.cpp.i
+
+.PHONY : Interface.i
+
+# target to preprocess a source file
+Interface.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Interface.cpp.i
+.PHONY : Interface.cpp.i
+
+Interface.s: Interface.cpp.s
+
+.PHONY : Interface.s
+
+# target to generate assembly for a file
+Interface.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Interface.cpp.s
+.PHONY : Interface.cpp.s
+
+Player.o: Player.cpp.o
+
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
+Room.o: Room.cpp.o
+
+.PHONY : Room.o
+
+# target to build an object file
+Room.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Room.cpp.o
+.PHONY : Room.cpp.o
+
+Room.i: Room.cpp.i
+
+.PHONY : Room.i
+
+# target to preprocess a source file
+Room.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Room.cpp.i
+.PHONY : Room.cpp.i
+
+Room.s: Room.cpp.s
+
+.PHONY : Room.s
+
+# target to generate assembly for a file
+Room.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Room.cpp.s
+.PHONY : Room.cpp.s
 
 glad.o: glad.c.o
 
@@ -186,6 +321,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
+	@echo "... Image.o"
+	@echo "... Image.i"
+	@echo "... Image.s"
+	@echo "... Interface.o"
+	@echo "... Interface.i"
+	@echo "... Interface.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
+	@echo "... Room.o"
+	@echo "... Room.i"
+	@echo "... Room.s"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"

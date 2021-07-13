@@ -9,6 +9,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 set(SOURCE_FILES
         glad.c
+        Image.cpp
+        Interface.cpp
+        Player.cpp
+        Game.cpp
+        Room.cpp
         main.cpp)
 
 set(ADDITIONAL_INCLUDE_DIRS
@@ -19,7 +24,6 @@ set(ADDITIONAL_RUNTIME_LIBRARY_DIRS
         dependencies/bin)
 
 set (CMAKE_CXX_FLAGS_DEBUG  "${CMAKE_CXX_FLAGS_DEBUG}")
-
 if(WIN32)
   set(ADDITIONAL_INCLUDE_DIRS
         ${ADDITIONAL_INCLUDE_DIRS}

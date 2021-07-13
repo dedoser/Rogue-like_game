@@ -1,4 +1,4 @@
-# Install script for directory: /home/fignigno/Desktop/cg/task1
+# Install script for directory: /home/fignigno/Desktop/cg/msu_cmc_cg_2021/template1_cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fignigno/Desktop/cg/task1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fignigno/Desktop/cg/msu_cmc_cg_2021/template1_cpp/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

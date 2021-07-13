@@ -1,9 +1,9 @@
-#ifndef IMAGE_H
-#define IMAGE_H
+#ifndef MAIN_IMAGE_H
+#define MAIN_IMAGE_H
 
 #include <string>
 #include <unistd.h>
-constexpr int tileSize = 16;
+constexpr int tileSize = 32;
 
 struct Pixel
 {
@@ -13,26 +13,34 @@ struct Pixel
   uint8_t a;
 };
 
+enum class MovementDir
+{
+  UP,
+  DOWN,
+  LEFT,
+  RIGHT
+};
+
 constexpr Pixel backgroundColor{0, 0, 0, 0};
 
 struct Image
 {
   explicit Image(const std::string &a_path);
   Image(int a_width, int a_height, int a_channels);
-
+  void  del_data();
   int Save(const std::string &a_path);
-
+  Image();
   int Width()    const { return width; }
   int Height()   const { return height; }
   int Channels() const { return channels; }
   size_t Size()  const { return size; }
   Pixel* Data()        { return  data; }
+  void  Draw(Image &screen, int x, int y, int size);
 
   Pixel GetPixel(int x, int y) {
-    return data[height * y + x];}
+    return data[width * y + x];}
   void  PutPixel(int x, int y, const Pixel &pix) {
-    data[height * y + x] = pix; }
-
+    data[width * y + x] = pix; }
   ~Image();
 
 private:
@@ -44,4 +52,6 @@ private:
   bool self_allocated = false;
 };
 
-#endif
+
+
+#endif //MAIN_IMAGE_H
